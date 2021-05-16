@@ -20,10 +20,10 @@ MainWindow::MainWindow(QWidget *parent)
         QLabel *lb=new QLabel(this);
         lb->move(180,25);
         lb->setAlignment(Qt::AlignHCenter);
-        QPixmap pi("C:/Users/acer/Desktop/userh.png");
+        QPixmap pi("C:/Users/acer/Desktop/use.png");
         l->setPixmap(pi.scaled(20,20));
 
-        QLabel *l1=new QLabel("UserName",this);
+        QLabel *l1=new QLabel("Username",this);
         l1->setMinimumSize(70,50);
         l1->move(130,50);
         QPalette pal;
@@ -38,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent)
         QLabel *lp=new QLabel(this);
         lp->move(100,110);
         lp->setMinimumSize(200,50);
-        QPixmap pix("C:/Users/acer/Desktop/password.png");
+        QPixmap pix("C:/Users/acer/Desktop/pas.jpg");
         lp->setPixmap(pix.scaled(20,20));
 
         QLabel *pass=new QLabel("Password",this);
@@ -73,7 +73,7 @@ MainWindow::MainWindow(QWidget *parent)
         connect(btn,&QPushButton::clicked,[=](){
             QString uname=le->text();
             QString p=lie->text();
-            if(uname=="shalinisaravanan"&& p=="12345")
+            if(uname=="sudharson"&& p=="virat18")
             {
                 QMessageBox::information(this,"Login","Login Successful!!");
             }
